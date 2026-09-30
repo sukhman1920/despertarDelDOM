@@ -4,13 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <title>La SUK SHOP</title>
+    <link rel="stylesheet" href="styleDOM.css">
 </head>
 
 
 <body>
-    
+    <header id="cabecera">
+        <h1>LUXURY CAR SHOP</h1>
+        <button id="ModoOscuro">Modo Oscuro</button>
+    </header>
 
+    <section class="catalogo">
+        <input id="buscador" type="text" placeholder="Buscar coche">
+        <div class="producto">
+            <h2 class="titulo_coche" data-coche="ferrari" data-precio="500000">Ferrari LaFerrari</h2>
+            <p>500.000 $</p>
+            <button>Comprar</button>
+        </div>
+        
+        <div class="producto" data-coche="Lamborghini" data-precio="320000">
+            <h2 class="titulo_coche">Lamborghini Temerario</h2>
+            <p>320.000 $</p>
+            <button>Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <h2 class="titulo_coche" data-coche="Porsche" data-precio="195000">Porsche 911 GT Turbos S</h2>
+            <p>195.000 $</p>
+            <button>Comprar</button>
+        </div>
+    </section>
+
+    <section class="carrito">
+        <h2>Carrito</h2>
+        <p id="cantidad">Cantidad</p>
+        <p id="total">Total</p>
+    </section>
+    
+    <footer>
+        Pie de Página
+    </footer>
 </body>
 
 
 </html>
+

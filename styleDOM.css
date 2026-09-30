@@ -1,0 +1,35 @@
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    margin: 2vh;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh;
+}
+
+#ModoOscuro{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: rgb(252, 250, 250);
+    background-color: black;
+    border-radius: 8px;
+}
+
+.catalogo {
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
