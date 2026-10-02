@@ -9,6 +9,9 @@ USO DE IA ----------------------------------------------------------------------
 - Pregunta: como hacer un buscador.
 - Respuesta: usar input con elun type=text.
 -----
+- Pregunta: diferencia entre vh y % para ajustar imagenes.
+- Respuesta: px es un tamaño fijo, vh depende de la altura de la pantalla y % depende del elemento que lo contiene. Principalmente vh para que los tamaños se adapten a la pantalla. En las imágenes podemos usar 100% para que ocupen todo el ancho de la tarjeta.
+-----
 - 
 AUTOPSIA -----------------------------------------------------------------------------------------
 
