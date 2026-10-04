@@ -1,25 +1,32 @@
+<!-- ----------------------- HTML ----------------------- -->
+
 <!DOCTYPE html>
 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Nombre que aparece en la pestaña-->
     <title>La SUK SHOP</title>
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="styleDOM.css">
 </head>
 
 
 <body>
+    <!-- Cabecera y botón para cambiar modo oscuro-->
     <header id="cabecera">
         <h1>LUXURY CAR SHOP</h1>
         <button id="ModoOscuro">Modo Oscuro</button>
     </header>
 
+    <!-- Catálogo y buscador -->
     <section class="catalogo">
         
         <div class="busqueda">
             <input id="buscador" type="text" placeholder="Buscar coche">
         </div>
 
+        <!-- Datos de los coche que después se utilizan en el JS -->
         <div class="producto" data-coche="ferrari" data-precio="500000">
             <h2 class="titulo_coche">Ferrari LaFerrari</h2>
             <img src="imagenes/ferrari_laferrari.webp" alt="Ferrari LaFerrari">
@@ -27,30 +34,39 @@
             <button>Comprar</button>
         </div>
         
-        <div class="producto" data-coche="Lamborghini" data-precio="320000">
+        <div class="producto" data-coche="lamborghini" data-precio="320000">
             <h2 class="titulo_coche">Lamborghini Temerario</h2>
             <img src="imagenes/lamborghini.jpg" alt="Lamborghini Temerario">
             <p>320.000 $</p>
             <button>Comprar</button>
         </div>
         
-        <div class="producto" data-coche="Porsche" data-precio="195000">
-            <h2 class="titulo_coche">Porsche 911 GT Turbos S</h2>
+        <div class="producto" data-coche="porsche" data-precio="195000">
+            <h2 class="titulo_coche">Porsche 911 GT TS</h2>
             <img src="imagenes/porsche.jpg" alt="Porsche 911 GT Turbo S">
             <p>195.000 $</p>
             <button>Comprar</button>
         </div>
     </section>
 
+    <!-- Carrito, JS añade los productos-->
     <section class="carrito">
         <h2>Carrito</h2>
-        <p id="cantidad">Cantidad</p>
-        <p id="total">Total</p>
+
+        <!-- JS añade aquí cada coche que se comprará -->
+        <div id="listaCarrito"></div>
+
+        <!-- Estos datos también se actualizan en JS -->
+        <p id="cantidad">Cantidad: 0</p>
+        <p id="total">Total: 0 $</p>
     </section>
     
+    <!-- Pie de página -->
     <footer>
-        Pie de Página
+        © 2026 LA SUK SHOP · LUXURY CAR SHOP · Exclusividad sobre ruedas.
     </footer>
+
+    <!-- Archivo JS-->
     <script src="scriptDOM.js"></script>
 </body>
 

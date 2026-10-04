@@ -1,3 +1,6 @@
+/* ----------------------- CSS -----------------------  */
+
+/* Estilos generales de la página web */
 body {
     font-family: 'Courier New', Courier, monospace, sans-serif;
     margin: 2vh;
@@ -5,6 +8,7 @@ body {
     color: #222;
 }
 
+/* Cabecera, título a un lado y botón al otro */
 #cabecera {
     display: flex;
     justify-content: space-between;
@@ -12,6 +16,7 @@ body {
     padding: 3vh;
 }
 
+/* Botón modo oscuro */
 #ModoOscuro{
     font-family: 'Courier New', Courier, monospace, sans-serif;
     color: rgb(252, 250, 250);
@@ -19,6 +24,7 @@ body {
     border-radius: 8px;
 }
 
+/* Distribución de los productos */
 .catalogo {
     display: flex;
     justify-content: center;
@@ -26,6 +32,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* Estilo de cada contenedor de los cohes */
 .producto {
     background-color: white;
     padding: 2vh;
@@ -35,6 +42,7 @@ body {
     text-align: center;
 }
 
+/* Tamaño y colocación de las imagenes */
 .producto img {
     width: 100%;
     height: 25vh;
@@ -42,6 +50,7 @@ body {
     border-radius: 1vh;
 }
 
+/* Botón de comprar */
 .producto button {
     background-color: black;
     color: white;
@@ -52,33 +61,25 @@ body {
     cursor: pointer;
 }
 
+/* Efecto al pasar el ratón por el botón */
 .producto button:hover {
     background-color: #333;
     transform: scale(1.05);
 }
 
+/* El div del coche sube un poco al pasar el ratón */
 .producto:hover {
     transform: translateY(-1vh);
 }
 
-.oscuro .carrito {
-    background-color: #222;
-    color: white;
-}
-
-.oscuro .carrito h2 {
-    border-color: white;
-}
-
-.oscuro #cantidad {
-    color: #ccc;
-}
+/* Contenedor de búsqueda */
 .busqueda {
     width: 100%;
     text-align: center;
     margin-bottom: 3vh;
 }
 
+/* Diseño del campo de búsqueda */
 #buscador {
     width: 40vh;
     height: 5vh;
@@ -93,16 +94,19 @@ body {
     transition: 0.3s;
 }
 
+/* Cambios del buscador cuando está seleccionado */
 #buscador:focus {
     border-color: black;
     box-shadow: 0 0 1.5vh rgba(0, 0, 0, 0.3);
     transform: scale(1.02);
 }
 
+/* Color del texto del ejemplo de búsqueda del buscador */
 #buscador::placeholder {
     color: #777;
 }
 
+/* Diseño general del carrito */
 .carrito {
     width: 70%;
     margin: 5vh auto;
@@ -113,6 +117,7 @@ body {
     box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.15);
 }
 
+/* Título del carrito */
 .carrito h2 {
     margin-top: 0;
     font-size: 3vh;
@@ -120,11 +125,13 @@ body {
     padding-bottom: 2vh;
 }
 
+/* Texto de cantidad y total */
 .carrito p {
     font-size: 2.2vh;
     margin: 1.5vh;
     font-weight: bold;
 }
+
 
 #cantidad {
     color: #555;
@@ -134,6 +141,7 @@ body {
     font-size: 2.5vh;
 }
 
+/* Pied depágina */
 footer {
     margin-top: 5vh;
     padding: 3vh;
@@ -144,6 +152,9 @@ footer {
     font-size: 1.8vh;
 }
 
+/* ----------------- MODO OSCURO ----------------- */
+
+/* Clase que añade JS al body para activar el modo oscuro */
 .oscuro {
     background-color: #111;
     color: white;
@@ -163,6 +174,14 @@ footer {
     color: white;
 }
 
+.oscuro .carrito h2 {
+    border-color: white;
+}
+
+.oscuro #cantidad {
+    color: #ccc;
+}
+
 .oscuro #buscador {
     background-color: #222;
     color: white;
@@ -180,4 +199,34 @@ footer {
 .oscuro footer {
     background-color: #000;
     color: white;
+}
+
+.oscuro #listaCarrito button {
+    background-color: #111;
+    color: white;
+}
+
+.oscuro #listaCarrito button:hover {
+    background-color: #000;
+}
+
+/* Clase que utiliza JS para ocultar productos del buscador */
+.oculto {
+    display: none;
+}
+
+/* Botones que aparecen de eliminar dentro del carrito */
+#listaCarrito button {
+    margin-left: 2vh;
+    padding: 0.8vh 2vh;
+    border: none;
+    border-radius: 1vh;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+/* Efecto del ratón cuando pasa por botón de eliminar */
+#listaCarrito button:hover {
+    background-color: #333;
 }
